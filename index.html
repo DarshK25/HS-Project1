@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darsh's Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        body {
+            padding-top: 56px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #bbe6f2;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+        }
+        .profile-container img {
+            margin-left: 20px;
+        }
+        .contact-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .contact-icons a:hover {
+            color: #44c9ed;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .section-title {
+            margin: 40px 0 20px;
+            border-bottom: 2px solid #44c9ed;
+            padding-bottom: 10px;
+        }
+        .tech-stack, .leetcode-profile, .education {
+            margin: 20px 0;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+        .blog-card img {
+            width: 100%;
+            height: auto;
+        }
+        #contact-form {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.form-group label {
+    color: #fff;
+}
+
+.form-control {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.btn-primary {
+    background-color: #44c9ed;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #34a0d1;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Darsh's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Introduction Row -->
+        <div class="row my-4">
+            <div class="col-lg-8">
+                <h1 class="my-4">Hello, This is Darsh!</h1>
+                <p>Welcome to My Portfolio.</p>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center">
+                <img src="Photo.jpeg" alt="Profile Photo" class="profile-img">
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">About Me</h2>
+                <p>I am currently a second-year student at the A.P. Shah Institute of Technology, pursuing my passion for technology and software development. With a strong foundation in computer science from my studies at Royal College of Arts, Science, and Commerce, I have developed a keen interest in deepening my programming skills.</p>
+                <p>Currently, I am expanding my expertise in Java, building on a solid base in C++, C, and HTML. I am enthusiastic about applying my knowledge in real-world scenarios, and eager to engage in projects and internships where I can apply my technical skills, collaborate with seasoned developers, and contribute to meaningful projects.</p>
+                <p>I am currently a SWE fellow at Headstarter AI, where I work on projects involving HTML, CSS, ReactJS, NextJS, and Firebase, collaborating with a talented team. We also participate in weekend hackathons to innovate and develop new solutions.</p>
+                <p>I am particularly interested in how software development can be leveraged to solve practical problems and improve people's lives. Let's connect! I am always open to discussing technology and opportunities where I can bring my programming skills and fresh ideas to the table.</p>
+            </div>
+        </div>
+
+        <!-- Tech Stack Section -->
+        <div id="tech-stack" class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">Tech Stack Skills</h2>
+                <p><strong>Languages:</strong> Java, C/C++, HTML, Visual Basics 6.0</p>
+            </div>
+        </div>
+
+        <!-- LeetCode Profile Section -->
+        <div id="leetcode-profile" class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">LeetCode Profile</h2>
+                <p><strong>Profile:</strong> <a href="https://leetcode.com/u/DarshK25/" target="_blank" style="color: #44c9ed;">DarshK25</a></p>
+                <p><strong>DSA Skills:</strong></p>
+                <ul>
+                    <li><strong>Advanced:</strong> Divide and Conquer (3), Dynamic Programming (1)</li>
+                    <li><strong>Intermediate:</strong> Recursion (6), Hash Table (5), Math (5), Design (4), Binary Search (1)</li>
+                    <li><strong>Fundamental:</strong> Linked List (16), Two Pointers (10), Array (6), Queue (4), Stack (3), Sorting (2), String (1)</li>
+                </ul>
+                <p><strong>LeetCode Global Rank:</strong> 2,183,182</p>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">Projects</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                            <a href="LFR.jpg"><img class="card-img-top" src="LFR.jpg" alt="Line Following Robot"></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="1stSemPhyProject.docx">Line Following Robot</a>
+                                </h4>
+                                <p class="card-text"><font color="black">Collaborated with a team and successfully built a Line-Following-Robot Prototype as a Semester project. Developed skills like leadership and team collaboration, gained theoretical and practical knowledge about circuits.</font></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="Alexa_NumberGuess.jpeg" alt="Guess The Number"></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="https://github.com/DarshK25/JAVA/blob/main/src/GuessTheNumber.java">Guess The Number</a>
+                                </h4>
+                                <p class="card-text"><font color="black">Implemented a simple game where the player guesses a number between 0 and 100. The game provides feedback on the guesses and indicates whether the guess is too high, too low, or close to the correct number.</font></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <div class="card h-100">
+                            <a href="#"><img class="card-img-top" src="rock-paper-scissors-neon-icons-vector.jpg" alt="Rock Paper Scissors"></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="https://github.com/DarshK25/JAVA/blob/main/src/Rock%20Paper%20Scissor">Rock Paper Scissors</a>
+                                </h4>
+                                <p class="card-text"><font color="black">A classic Rock-Paper-Scissors game where players compete against the computer. Users choose Rock, Paper, or Scissors, and the computer randomly selects one of these options. The game evaluates the choices to determine the winner and provides feedback on the outcome. Players can continue to play multiple rounds based on their preference.</font></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div id="certifications" class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">Certifications</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><font color="black">Java Certification</font></h4>
+                                <p class="card-text"><font color="black">Completed Java certification from HackerRank.</font></p>
+                                <a href="https://www.hackerrank.com/certificates/c735e5a1db5a" class="btn btn-primary" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"><font color="black">Geekster OOPs in Java</font></h4>
+                                <p class="card-text"><font color="black">Completed OOPs in Java certification from Geekster.</font></p>
+                                <a href="https://certifications.geekster.in/ijWI732BP3iIWBx9s5KHu-geekster.pdf" class="btn btn-primary" target="_blank">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div id="education" class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">Education</h2>
+                <p><strong>A.P. Shah Institute of Technology, Thane, Maharashtra</strong></p>
+                <p>Currently pursuing Computer Engineering<br> 2nd Semester CGPA: 8.53<br> 1st Semester CGPA: 7.83.</p>
+                <p><strong>Royal College of Arts, Science, and Commerce, Mira-Bhayandar, Maharashtra</strong></p>
+                <p>Completed 11th and 12th grades with 73% in 12th grade.</p>
+                <p><strong>Relevant Public High School, Mira-Bhayandar, Maharashtra</strong></p>
+                <p>Completed academics up to 10th grade with a score of 94.20%.</p>
+            </div>
+        </div>
+
+        <!-- Blog Section -->
+<!-- Blog Section -->
+<div id="blog" class="row"> 
+    <div class="col-lg-12">
+        <h2 class="section-title">Blogs  </h2>
+        <font color = "black">
+        <!-- Blog Post 1 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Understanding Object-Oriented Programming in Java</h4>
+                <p class="card-text">
+                    Java is renowned for its robust Object-Oriented Programming (OOP) capabilities. In this blog, we will delve into the core concepts of OOP and how Java implements these principles to create efficient and scalable software.
+                </p>
+                <p class="card-text">
+                    <strong>Concepts of OOP:</strong> Encapsulation, Inheritance, Polymorphism, and Abstraction.<br>
+                    <strong>Encapsulation in Java:</strong> How to use classes and objects to protect data.<br>
+                    <strong>Inheritance:</strong> Extending classes to reuse code and create hierarchical relationships.<br>
+                    <strong>Polymorphism:</strong> Methods overriding and interfaces to achieve flexibility in your code.<br>
+                    <strong>Abstraction:</strong> Abstract classes and methods to define templates for other classes.
+                </p>
+                <a href="https://docs.oracle.com/javase/tutorial/" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">A Beginner’s Guide to SQL Databases</h4>
+                <p class="card-text">
+                    SQL (Structured Query Language) is the cornerstone of database management. This post will introduce you to SQL, its basic commands, and how to interact with databases effectively.
+                </p>
+                <p class="card-text">
+                    <strong>What is SQL?</strong> Overview of SQL and its importance in database management.<br>
+                    <strong>Basic SQL Commands:</strong> SELECT, INSERT, UPDATE, DELETE.<br>
+                    <strong>Database Design:</strong> Creating tables, defining relationships, and indexing for optimization.<br>
+                    <strong>Queries and Joins:</strong> Writing complex queries and understanding different types of joins (INNER, LEFT, RIGHT, FULL).
+                </p>
+                <a href="https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Exploring Data Structures: Linked Lists</h4>
+                <p class="card-text">
+                    Linked Lists are a fundamental data structure used in many computer algorithms. This blog will cover the different types of linked lists and their implementations in Java.
+                </p>
+                <p class="card-text">
+                    <strong>What is a Linked List?</strong> Overview and comparison with arrays.<br>
+                    <strong>Types of Linked Lists:</strong> Singly Linked Lists, Doubly Linked Lists, and Circular Linked Lists.<br>
+                    <strong>Operations:</strong> Insertion, Deletion, and Traversal.<br>
+                    <strong>Java Implementation:</strong> Code examples and explanations for each type of linked list.
+                </p>
+                <a href="https://www.geeksforgeeks.org/linked-list-data-structure/" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">Introduction to Competitive Programming: Tips and Tricks</h4>
+                <p class="card-text">
+                    Competitive programming enhances problem-solving skills and coding efficiency. This blog will provide tips and strategies to excel in competitive programming contests.
+                </p>
+                <p class="card-text">
+                    <strong>Why Competitive Programming?</strong> Benefits and impact on career and skills.<br>
+                    <strong>Essential Algorithms and Data Structures:</strong> Graphs, Trees, Dynamic Programming.<br>
+                    <strong>Practicing Efficiently:</strong> How to use platforms like LeetCode, CodeChef, and HackerRank.<br>
+                    <strong>Time Management:</strong> Tips for solving problems within constraints.
+                </p>
+                <a href="https://www.codechef.com/guide-to-competitive-programming" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 5 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title">The Basics of Web Development: HTML and CSS</h4>
+                <p class="card-text">
+                    Web development is an exciting field that involves creating and designing websites. This post will introduce you to HTML and CSS, the fundamental technologies for building web pages.
+                </p>
+                <p class="card-text">
+                    <strong>HTML Basics:</strong> Structure of HTML documents, tags, and attributes.<br>
+                    <strong>CSS Fundamentals:</strong> Styling elements, using classes and IDs, and layout techniques.<br>
+                    <strong>Responsive Design:</strong> Techniques to make your website look good on all devices.<br>
+                    <strong>Practical Example:</strong> Creating a simple web page with HTML and CSS.
+                </p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" class="btn btn-primary" target="_blank">Read More</a>
+            </div>
+        </div>
+    </font>
+    </div>
+</div>
+
+<!-- Contact Form Section -->
+<div id="contact-form" class="row my-4">
+    <div class="col-lg-12">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <div id="formFeedback" class="mt-3"></div>
+    </div>
+</div>
+
+
+        <!-- Contact Section -->
+        html
+        Copy code
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title animate__animated animate__fadeIn">Contact Me</h2>
+                <div id="contact-form" class="row my-4 animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="col-lg-12">
+                        <form id="contactForm" action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                        <div id="formFeedback" class="mt-3"></div>
+                    </div>
+                </div>
+                <div class="contact-info animate__animated animate__fadeIn animate__delay-2s">
+                    <h2>Connect with me</h2>
+                    <p>Email: <a href="mailto:darshkalathiya25@gmail.com" style="color: #44c9ed;">darshkalathiya25@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+918779860907" style="color: #44c9ed;">+91 8779860907</a></p>
+                    <p>Location: Mira Bhayandar, Thane: 401107, Mumbai, India</p>
+                </div>
+                <div class="contact-icons animate__animated animate__fadeIn animate__delay-3s">
+                    <a href="https://www.linkedin.com/in/darsh-kalathiya-00433b280/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/DarshK25" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/DarshK2504" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/this.darsh/?next=%2F" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/channels/@me" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Darsh's Portfolio 2024</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+        
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+        
+            // Example validation (you can enhance this based on your needs)
+            if (name && email && message) {
+                // Display a success message or send data to the server
+                document.getElementById('formFeedback').innerHTML = `<p class="text-success">Thank you, ${name}! Your message has been sent.</p>`;
+                // Clear form fields
+                document.getElementById('contactForm').reset();
+            } else {
+                // Display an error message
+                document.getElementById('formFeedback').innerHTML = `<p class="text-danger">Please fill out all fields.</p>`;
+            }
+        });
+        </script>
+        
+</body>
+</html>
